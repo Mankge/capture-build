@@ -14,6 +14,7 @@ import { useScroll } from "../components/UseScroll";
 import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
+import ScrollTop from "../components/ScrollTop";
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -61,6 +62,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };
@@ -74,6 +76,7 @@ const Work = styled(motion.div)`
   }
 `;
 const Movie = styled(motion.div)`
+  overflow: hidden;
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
